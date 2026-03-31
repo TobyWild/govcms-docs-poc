@@ -1,6 +1,6 @@
 # Using the Lagoon CLI tool with GovCMS
 
-The [Lagoon CLI](https://amazeeio.github.io/lagoon-cli/commands/lagoon/) allows PaaS users to interact with the GovCMS platform from the command line, and provides a method to control environment variables, deployments, and environments themselves.
+The [Lagoon CLI](https://uselagoon.github.io/lagoon-cli/commands/lagoon/) allows PaaS users to interact with the GovCMS platform from the command line, and provides a method to control environment variables, deployments, and environments themselves.
 
 ## Link CLI with GovCMS Lagoon
 
@@ -21,4 +21,4 @@ lagoon config default -l govcms
 lagoon list projects
 ```
 
-[Read the docs](https://amazeeio.github.io/lagoon-cli/commands/lagoon/) for more information.
+[Read the docs](https://uselagoon.github.io/lagoon-cli/commands/lagoon/) for more information.

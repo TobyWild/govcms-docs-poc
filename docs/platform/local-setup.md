@@ -20,14 +20,24 @@ following:
 
 ## Software Requirements
 
+Recommended software:
+
+* [Git](https://git-scm.com/downloads)
+* Docker & docker-compose [Windows](https://docs.docker.com/docker-for-windows/install/), [OSX](https://docs.docker.com/docker-for-mac/install/)
+* [Pygmy](https://pygmystack.github.io/pygmy/local_docker_development/)
+* [Ahoy](http://ahoy-cli.readthedocs.io/en/latest/#installation)
+
 Supported platforms are:
 
 * MacOS - 10.14 (Mojave) and above
 * Windows 10 Pro
+* Linux
 
-  !!! note
-  Windows 10 users on version 1903 or higher can use Docker with WSL2, which offers performance improvements and,
-  since it uses a full Linux environment, the commands are the same as those for Mac.
+See also the [Lagoon docs](https://docs.lagoon.sh/using-lagoon-the-basics/local-development-environments/) as well as the Windows-specific tips in the [SaaS developer guide](../guides/saas-developer-guide.md).
+
+!!! note
+    Windows 10 users on version 1903 or higher can use Docker with WSL2, which offers performance improvements and,
+    since it uses a full Linux environment, the commands are the same as those for Mac.
 
 Before spinning up your local development environment, make sure the following software is installed and runs the latest
 versions.
@@ -135,9 +145,9 @@ Windows: ```docker compose down -d; docker compose up -d```
 ## Update your local GovCMS version
 
 !!! note
-Before updating your local GovCMS version, we recommend you back up your local database with the following
-command:
-```ahoy mysql-dump [filename]```
+    Before updating your local GovCMS version, we recommend you back up your local database with the following
+    command:
+    ```ahoy mysql-dump [filename]```
 
 GovCMS is available publicly as a pre-built Docker container. All you have to do is to run ahoy pull to download the
 latest containers, followed by ahoy build to build the distribution:
